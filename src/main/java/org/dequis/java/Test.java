@@ -15,6 +15,17 @@ import java.util.logging.*;
 public class Test extends JavaPlugin implements Listener, CommandExecutor {
 
     public void onEnable() {
+        PluginManager pm = this.getServer().getPluginManager();
+        pm.registerEvents(this, this);
+        getCommand("command").setExecutor(this);
     }
 
+    @Override
+    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+        if (command.getName().equalsIgnoreCase("command")) {
+            getLogger().info("command used");
+            return true;
+        }
+        return false;
+    }
 }
