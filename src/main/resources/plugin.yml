@@ -1,0 +1,8 @@
+name: Test
+main: org.dequis.java.Test
+version: 0.1
+
+commands:
+   command:
+      description: A Command
+      usage: /<command> 
