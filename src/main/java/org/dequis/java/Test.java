@@ -4,6 +4,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.command.*;
 import org.bukkit.entity.*;
 import org.bukkit.event.*;
+import org.bukkit.event.block.*;
 import org.bukkit.plugin.java.*;
 import org.bukkit.plugin.*;
 import org.bukkit.inventory.*;
