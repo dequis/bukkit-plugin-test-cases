@@ -8,6 +8,7 @@ import org.bukkit.event.block.*;
 import org.bukkit.plugin.java.*;
 import org.bukkit.plugin.*;
 import org.bukkit.inventory.*;
+import org.bukkit.potion.*;
 import java.util.*;
 import java.util.logging.*;
 
@@ -23,7 +24,7 @@ public class Test extends JavaPlugin implements Listener, CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (command.getName().equalsIgnoreCase("command")) {
-            getLogger().info("command used");
+            getLogger().info("speed potion effect = " + PotionEffectType.getByName("SPEED"));
             return true;
         }
         return false;
